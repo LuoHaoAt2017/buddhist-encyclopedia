@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "target": "es5",
+    "allowJs": true,
+    "experimentalDecorators": true,
+  },
+  "include": [
+    "src/**/*.vue",
+    "src/**/*.ts",
+    "src/**/*.js",
+  ],
+  "exclude": []
+}

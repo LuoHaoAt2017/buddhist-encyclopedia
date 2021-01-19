@@ -1,0 +1,58 @@
+{
+  "name": "buddhist-encyclopedia",
+  "version": "1.0.0",
+  "description": "佛教百科全书",
+  "main": "babel.config.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "build": "webpack --open --config webpack.prod.js",
+    "dev": "webpack-dev-server --config webpack.dev.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuoHaoAt2017/buddhist-encyclopedia.git"
+  },
+  "author": "LuoHao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuoHaoAt2017/buddhist-encyclopedia/issues"
+  },
+  "homepage": "https://github.com/LuoHaoAt2017/buddhist-encyclopedia#readme",
+  "dependencies": {
+    "@antv/data-set": "^0.11.7",
+    "@antv/g2": "4.1.7",
+    "@antv/g6": "4.1.1",
+    "@antv/l7": "2.3.6",
+    "ant-design-vue": "1.7.2",
+    "axios": "0.21.1",
+    "vue": "2.6.12",
+    "vue-router": "3.4.9",
+    "vuex": "3.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.0.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.5.1",
+    "jest": "^26.6.3",
+    "less": "^4.1.0",
+    "less-loader": "^7.2.1",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^8.0.14",
+    "typescript": "^4.1.3",
+    "vue-class-component": "7.2.6",
+    "vue-loader": "^15.9.6",
+    "vue-property-decorator": "^9.1.2",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^4.2.2"
+  }
+}
