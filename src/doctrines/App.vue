@@ -5,8 +5,13 @@
 </template>
 
 <script>
+import entries from 'root/build/entries';
+import addBackgroundMusic from 'root/utils/music';
 export default {
-  name: 'App'
+  name: 'App',
+  created() {
+    addBackgroundMusic(entries[1].music);
+  }
 }
 </script>
 

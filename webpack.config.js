@@ -54,11 +54,16 @@ module.exports = {
         test: /\.(jpg|png|svg)$/,
         use: ['file-loader']
       },
+      {
+        test: /\.(mp3|mp4)$/,
+        use: ['file-loader']
+      },
     ]
   },
   resolve: {
     alias: {
-      '@': resolve('src')
+      '@': resolve('src'),
+      'root': resolve('.'),
     },
     extensions: [".ts", ".js", ".vue"]
   },
