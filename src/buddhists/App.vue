@@ -16,5 +16,14 @@ export default {
 </script>
 
 <style lang="less">
-
+body {
+  padding: 10px;
+  .root {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+}
 </style>

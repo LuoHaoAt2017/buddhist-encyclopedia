@@ -2,6 +2,7 @@ function addBackgroundMusic(url) {
   const audio = document.createElement('audio');
   // 播放设置
   audio.src = url;
+  audio.muted = true;
   audio.hidden = true;
   audio.loop = true;
   // 挂载元素

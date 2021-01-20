@@ -7,7 +7,8 @@ module.exports = merge(config, {
   mode: 'development',
   devServer: {
     port: 9000,
-    open: true,
+    open: true,    
+    watch: true,
     openPage: `${entries[0].name}.html`
   }
 });
