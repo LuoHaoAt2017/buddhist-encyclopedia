@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <a-button @click="handleClik">初转法轮</a-button>
   </div>
 </template>
 
@@ -19,13 +20,15 @@ export default {
   },
   methods: {
     openDrawer() {
+      const hooker = this.getContainer();
       const options = {
-        visible: true,
         width: 80,
+        visible: true,
+        container: '.container'
       };
       let drawer = new Drawer({
         store: store,
-        data: options,
+        data: options
       });
       drawer.$mount();
       drawer.$on('close', function() {
@@ -34,13 +37,20 @@ export default {
       });
       document.body.appendChild(drawer.$el);
     },
+    handleClik() {
+      this.openDrawer();
+    },
+    getContainer() {
+      return document.querySelector('.container');
+    }
   },
   mounted() {
-    this.openDrawer();
   }
 }
 </script>
 
 <style lang="less" scoped>
+.container {
 
+}
 </style>

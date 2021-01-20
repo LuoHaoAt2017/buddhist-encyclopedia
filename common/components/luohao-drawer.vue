@@ -4,11 +4,14 @@
     :width="`${width}%`"
     :destroyOnClose="true"
     :mask="true"
+    :maskClosable="false"
+    :getContainer="container"
+    title="scoped deep 测试"
     @close="closeCallback"
     wrapClassName="drawer-wrapper"
     placement="right"
   >
-  less scoped deep 测试
+  一切存在都是苦难
   </a-drawer>
 </template>
 
@@ -18,7 +21,8 @@ export default {
   data() {
     return {
       visible: false,
-      width: 100
+      width: 100,
+      container: 'body'
     }
   },
   methods: {
@@ -30,5 +34,14 @@ export default {
 </script>
 
 <style lang="less" scoped>
-
+.drawer-wrapper {
+  /deep/.ant-drawer-header {
+    .ant-drawer-title {
+      color: #f00;
+    }
+  }
+  /deep/.ant-drawer-body {
+    color: #00f;
+  }
+}
 </style>
