@@ -64,6 +64,7 @@ module.exports = {
     alias: {
       '@': resolve('src'),
       'root': resolve('.'),
+      'common': resolve('./common'),
     },
     extensions: [".ts", ".js", ".vue"]
   },

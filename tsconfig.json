@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "strict": true,
+    "strict": false,
     "sourceMap": true,
     "noImplicitAny": false,
     "module": "commonjs",
@@ -12,6 +12,12 @@
     "src/**/*.vue",
     "src/**/*.ts",
     "src/**/*.js",
+    "common/**/*.vue",
+    "common/**/*.ts",
+    "common/**/*.js",
+    "test/**/*.vue",
+    "test/**/*.ts",
+    "test/**/*.js",
   ],
   "exclude": []
 }
