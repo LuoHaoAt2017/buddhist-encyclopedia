@@ -8,8 +8,8 @@
     "test": "test"
   },
   "scripts": {
-    "build": "webpack --open --config webpack.prod.js",
-    "dev": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --open --config ./webpack.prod.js",
+    "dev": "webpack-dev-server --config ./webpack.dev.js",
     "test": "jest"
   },
   "repository": {

@@ -5,10 +5,10 @@ const entries = require('./build/entries');
 
 module.exports = merge(config, {
   mode: 'development',
+  watch: true,
   devServer: {
     port: 9000,
-    open: true,    
-    watch: true,
+    open: true,
     openPage: `${entries[0].name}.html`
   }
 });
